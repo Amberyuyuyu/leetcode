@@ -18,4 +18,6 @@ https://leetcode.cn/problems/aMhZSa/
 
 ​		判断原链表与翻转后的新链表进行比较，比较终点为中间节点`middlenode`，如果两者完全相同的话，返回`true`，否则返回`false`。
 
+这种方法的时间复杂度为O(n)，空间复杂度为O(1)。
+
 ​		
