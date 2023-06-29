@@ -8,6 +8,9 @@
  
 struct ListNode* getIntersectionNode(struct ListNode* headA, struct ListNode* headB) {
     struct ListNode* tailA, * tailB;
+    if(headA == NULL || headB == NULL){
+         return NULL;
+    }
     tailA = headA;
     tailB = headB;
     int lenA = 1;
