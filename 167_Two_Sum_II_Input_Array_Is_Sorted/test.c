@@ -4,7 +4,7 @@
 int* twoSum(int* numbers, int numbersSize, int target, int* returnSize) {
     int s1 = 0;
     int s2 = numbersSize - 1;
-    int* arr = (int*)malloc(sizeof(int*) * 2);
+    int* arr = (int*)malloc(sizeof(int) * 2);
     *returnSize = 2;
     while (s1 < s2) {
         if (numbers[s1] + numbers[s2] > target) {
