@@ -6,7 +6,7 @@
 
 问总共有多少条不同的路径？
 
-![94c66200e1badf4458a983139d68c55b](/Users/amber/Library/Containers/com.tencent.qq/Data/Library/Application Support/QQ/nt_qq_86eb2e71ec0fae5d360898fa57e2d3a9/nt_data/Pic/2023-07/Ori/94c66200e1badf4458a983139d68c55b.png)
+![image](https://github.com/Amberyuyuyu/leetcode/blob/master/62_Unique%20Paths/exp.png)
 
 来源：力扣（LeetCode）
 链接：https://leetcode.cn/problems/unique-paths
