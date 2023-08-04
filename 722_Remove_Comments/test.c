@@ -3,38 +3,38 @@
  */
 char** removeComments(char** source, int sourceSize, int* returnSize) {
     char** ret = (char**)calloc(sourceSize, sizeof(char*));
-    char new_line[sourceSize * 100 + 1];
+    char new_line[81];
     int pos = 0;
     int new_line_pos = 0;
     bool in_block = false;
-    for (int j = 0; j < sourceSize; j++) {//±éÀú´úÂë
-        char* line = source[j];//È¡µ±Ç°×Ö·û´®
+    for (int j = 0; j < sourceSize; j++) {//éåŽ†ä»£ç 
+        char* line = source[j];//å–å½“å‰å­—ç¬¦ä¸²
         int line_size = strlen(line);
-        for (int i = 0; i < line_size; i++) {//Ã¶¾ÙÃ¿Ò»¸ö×Ö·û
+        for (int i = 0; i < line_size; i++) {//æžšä¸¾æ¯ä¸€ä¸ªå­—ç¬¦
             if (in_block) {
-                //ÅÐ¶Ï×¢ÊÍ½áÊøÎ»ÖÃ
+                //åˆ¤æ–­æ³¨é‡Šç»“æŸä½ç½®
                 if (i + 1 < line_size && line[i] == '*' && line[i + 1] == '/') {
                     in_block = false;
                     i++;
                 }
             }
             else {
-                //ÅÐ¶Ï×¢ÊÍ¿ªÊ¼Î»ÖÃ
+                //åˆ¤æ–­æ³¨é‡Šå¼€å§‹ä½ç½®
                 if (i + 1 < line_size && line[i] == '/' && line[i + 1] == '*') {
                     in_block = true;
                     i++;
                 }
                 else if (i + 1 < line_size && line[i] == '/' && line[i + 1] == '/') {
-                    //ÐÐ×¢ÊÍ£¬Ö±½ÓÌø¹ýµ±Ç°×Ö·û´®
+                    //è¡Œæ³¨é‡Šï¼Œç›´æŽ¥è·³è¿‡å½“å‰å­—ç¬¦ä¸²
                     break;
                 }
                 else {
-                    //ÓÐÐ§´úÂë£¬¼ÇÂ¼
+                    //æœ‰æ•ˆä»£ç ï¼Œè®°å½•
                     new_line[new_line_pos++] = line[i];
                 }
             }
         }
-        //´æ´¢ÓÐÐ§×Ö·û´®
+        //å­˜å‚¨æœ‰æ•ˆå­—ç¬¦ä¸²
         if (!in_block && new_line_pos > 0) {
             new_line[new_line_pos] = '\0';
             ret[pos] = (char*)calloc(new_line_pos + 1, sizeof(char));
