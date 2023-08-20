@@ -22,7 +22,7 @@ https://leetcode.cn/problems/number-of-ways-of-cutting-a-pizza/
 
 ​		动态规划方程为：
 
-​				![506aeb8a756e1a6937538632a427872b](/Users/amber/Library/Containers/com.tencent.qq/Data/Library/Application Support/QQ/nt_qq_86eb2e71ec0fae5d360898fa57e2d3a9/nt_data/Pic/2023-08/Ori/506aeb8a756e1a6937538632a427872b.png)
+​				![img]([https://github.com/Amberyuyuyu/leetcode/blob/master/1444_Number_of_Ways_of_Cutting_a_Pizza/formula.png])
 
 ​		`i'`和`j'`满足`apples[i][j]>apples[i'][j]`，`apples[i][j]>apples[i][j']`。
 
