@@ -10,7 +10,7 @@ https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-tra
 
 思路：
 
-​		![image-20230908091107519](/Users/amber/Library/Application Support/typora-user-images/image-20230908091107519.png)
+​		![image](https://github.com/Amberyuyuyu/leetcode/blob/master/105_Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal/index.png)
 
 ​	如果`preorderSize`和`inorderSize`如果存在为`NULL`的情况，直接返回`NULL`即可。
 
