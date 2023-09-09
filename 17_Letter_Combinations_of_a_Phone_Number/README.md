@@ -4,7 +4,7 @@
 
 给出数字到字母的映射如下（与电话按键相同）。注意 1 不对应任何字母。
 
-![image](/Users/amber/Library/Containers/com.tencent.qq/Data/Library/Application Support/QQ/nt_qq_86eb2e71ec0fae5d360898fa57e2d3a9/nt_data/Pic/2023-09/Ori/df23aa809c8931d92e1d4226e347ac8f.png)
+![image](https://github.com/Amberyuyuyu/leetcode/blob/master/17_Letter_Combinations_of_a_Phone_Number/num.png)
 
 来源：力扣
 
