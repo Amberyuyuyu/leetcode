@@ -30,7 +30,7 @@ https://leetcode.cn/problems/movement-of-robots/
 
 ​		排序后计算所有机器人之间两两距离的方式如下图所示：
 
-![fe1fc98a931579c525bf4cc922dbe8fe](/Users/amber/Library/Containers/com.tencent.qq/Data/Library/Application Support/QQ/nt_qq_86eb2e71ec0fae5d360898fa57e2d3a9/nt_data/Pic/2023-10/Ori/fe1fc98a931579c525bf4cc922dbe8fe.png)					
+![img](https://github.com/Amberyuyuyu/leetcode/blob/master/2731_Movement_of_Robots/gif1.png)					
 
 ```c
 	for(int i=1; i<n; i++){
