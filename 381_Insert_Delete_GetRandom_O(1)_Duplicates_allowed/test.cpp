@@ -1,7 +1,7 @@
 class RandomizedCollection {
 public:
     RandomizedCollection() {
-
+        srand((unsigned)time(nullptr));
     }
 
     bool insert(int val) {
